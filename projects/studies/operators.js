@@ -108,12 +108,12 @@
  *                  console.log(typeof 6); // => returns number
  *              (!) Not Operator
  * 
- *      Ternary Operator or the COnditional operator that takes 3 arguments
+ *      Ternary Operator or the Conditional operator that takes 3 arguments
  *      a condidtion followed by a (?), an expression to execute 
  *      if the condition is truthy followed by (:), and the expression to execute
  *      if the condition is falsy
  *      var age = 19;
- *      var nba = (age >= 18) ? 'League' : 'COllege';
+ *      var nba = (age >= 18) ? 'League' : 'College';
  *      console.log(nba); // => prints League
  *
  */

@@ -75,13 +75,53 @@ console.log(animal);
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //create a literal array named 'animals'
-var aniamls = [];
+var animals = [];
+//push animal objct into the animals array
+animals.push(animal);
+//create a variable named duck and assign it th copied key/ value pairs
+var duck = { 
+    species: 'duck',
+    name: 'Jerome', 
+    noises: ['quack', 'honk', 'sneeze', 'woosh']
+};
+//push the duck object into the animals array
+animals.push(duck);
+//create 2 new animal objects and push to animals array
+var tiger = {
+    species: 'tiger',
+    name: 'Mike',
+    noises: ['rawr', 'snarl', 'yelp', 'whimper']
+};
+//push tiger ti the animals array
+animals.push(tiger);
+
+//2nd object
+var snake = {
+    species: 'reptile',
+    name: 'Simon',
+    noises: ['hiss', 'snap', 'rattle', 'slither']
+};
+//push var snake to animals array
+animals.push(snake);
+
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//create an array to store list of friends
+var friends = [];
+function getRandom(array) {
+    //use math.floor to return random order list of friends to array
+    return Math.floor(Math.random() * array.length);
+} 
+friends.push(animals[getRandom(animals)].name);
+    //console log friends
+    console.log(friends);
+    //add friends to one of the animals
+    animal.friends = friends;
+    //check console to see if friends properrty is added to animal
+    console.log(animal);
 
 
 /**
