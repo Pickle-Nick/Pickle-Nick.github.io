@@ -3,7 +3,13 @@
 // triangles ///////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 //create a loop that console.log() 7 times to form a triangle
- function triangles(number) {}
+ function triangles(number) {
+   var str = '';
+   for (var i = 0; i < number; i ++){
+      str = '#' + str;
+      console.log(str);
+ }
+ }
 
 /////////////////////////////////////////////////////////////////////////
 // fizzBuzz ////////////////////////////////////////////////////////////////////
@@ -32,6 +38,23 @@ function fizzBuzz(start, end) {
 //write a program that creates a string that represents an 8x8 grid,
 //using newline characters to seperate lines
 function drawChessboard(number) {
+  //create chessboard var to hold variables
+  var chessBoard = '';
+  //create nested loop to print the length of chessboard
+  for(let i =0; i < number; i++) {
+    for(let j = 0; j < number; j++) {
+      //create conditional statement to evaluate the number and print the desired string variable
+      if((j+ i) % 2 === 0) {
+        chessBoard += " ";
+      } else {
+        chessBoard += '#';
+      }
+    }
+    //after loop add new line character to chessboard
+    chessBoard += '\n';
+  }
+  console.log(chessBoard);
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////
